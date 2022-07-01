@@ -139,7 +139,183 @@
     </div>
 
     
-    
+    <style>
+.sort-by {cursor: pointer}
+</style>
+<a name="compare-products"></a>
+<div class="bg-light">
+	<div class="container pt-5">
+		
+		<div class="row mb-3">
+			<div class="col-md-12">
+				<h2 class="fw-bold">Compare Premier</h2>
+			</div>
+		</div>
+
+		
+		<div class="row mb-5">
+			<div class="col-md-9">
+				<h3 class="fs-5 fw-normal">2 products found</h3>
+			</div>
+			<div class="col-md-3">
+				
+				<div class="row">
+					<div class="col-md-12">
+						<div class="dropdown w-100">
+						  <button class="btn btn-light dropdown-toggle bg-white border w-100" type="button" id="dropdownMenuSortBy" data-bs-toggle="dropdown" aria-expanded="false">
+						    Sort by: <span id="sort-by-label">Recommended</span>
+						  </button>
+						  <ul class="dropdown-menu w-100" aria-labelledby="dropdownMenuButtonSortBy">
+						    <li><a class="dropdown-item sort-by" data-label="Recommended" data-id="sort-by-recommended">Recommended</a></li>
+						    <li><a class="dropdown-item sort-by" data-label="Price: Low to High" data-id="sort-by-price-low-to-high">Price: Low to High</a></li>
+						    <li><a class="dropdown-item sort-by" data-label="Price: High to Low" data-id="sort-by-price-high-to-low">Price: High to Low</a></li>
+						    <li><a class="dropdown-item sort-by" data-label="Price: Newest Arrivals" data-id="sort-by-newest-arrivals">Newest Arrivals</a></li>
+						  </ul>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script>
+			$( ".sort-by" ).click(function( event ) {
+				event.preventDefault();
+				var id = $( this ).data( "id" );
+			  	var label = $( this ).data( "label" );
+
+			  	$( "#sort-by-label" ).text( label );
+
+			  	$( "#sort-by-recommended" ).addClass( "d-none" );
+			  	$( "#sort-by-price-low-to-high" ).addClass( "d-none" );
+			  	$( "#sort-by-price-high-to-low" ).addClass( "d-none" );
+			  	$( "#sort-by-newest-arrivals" ).addClass( "d-none" );
+			  	$( "#" + id ).removeClass( "d-none" );
+
+			});
+		</script>
+
+		<div class="row" id="sort-by-recommended">  
+			<div class="col-md-4 mb-3">
+	<a href="teddy's-collection-scandi-hopsack-beige-single-bed-28480960685-product.html" class="text-decoration-none text-body" title="Shop Teddy's Collection Scandi Hopsack Beige Single Bed from Teddy Beau">
+		<div class="border-0 bg-white shadow-sm">
+  			<img src="https://images2.productserve.com/?w=400&h=400&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0148%2F2339%2F1280%2Fproducts%2F00_d9b0fc1e-35f5-4047-9291-38b6c884b2f7.jpg%3Fv%3D1612542792&feedId=38711&k=bf42a72d8f1463dd3a374760b9e6e95e56db974b" alt="Teddy's Collection Scandi Hopsack Beige Single Bed" class="w-100 mb-3">
+  			<div class="p-3">
+	  			<h4 class="fs-5 fw-bold" style="height:80px;overflow:hidden">Teddy's Collection Scandi Hopsack Beige Single Bed</h4>
+	  				  				<p class="fs-4">&pound;381.00</p>
+	  					  			
+	  			<p class="fs-6 fw-light">Sold by Teddy Beau</p>
+	  		</div>
+			</div>
+		</a>
+</div>
+<div class="col-md-4 mb-3">
+	<a href="teddy's-collection-scandi-hopsack-light-grey-king-size-bed-28480960683-product.html" class="text-decoration-none text-body" title="Shop Teddy's Collection Scandi Hopsack Light Grey King Size Bed from Teddy Beau">
+		<div class="border-0 bg-white shadow-sm">
+  			<img src="https://images2.productserve.com/?w=400&h=400&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0148%2F2339%2F1280%2Fproducts%2F00_39d00546-0548-4bce-ab9c-10d5510f39aa.jpg%3Fv%3D1612446223&feedId=38711&k=92fe0a70fb8ee081518010facd87fe7d0e148d6c" alt="Teddy's Collection Scandi Hopsack Light Grey King Size Bed" class="w-100 mb-3">
+  			<div class="p-3">
+	  			<h4 class="fs-5 fw-bold" style="height:80px;overflow:hidden">Teddy's Collection Scandi Hopsack Light Grey King Size Bed</h4>
+	  				  				<p class="fs-4">&pound;458.00</p>
+	  					  			
+	  			<p class="fs-6 fw-light">Sold by Teddy Beau</p>
+	  		</div>
+			</div>
+		</a>
+</div>
+		</div>
+
+		<div class="row d-none" id="sort-by-price-low-to-high">  
+			<div class="col-md-4 mb-3">
+	<a href="teddy's-collection-scandi-hopsack-beige-single-bed-28480960685-product.html" class="text-decoration-none text-body" title="Shop Teddy's Collection Scandi Hopsack Beige Single Bed from Teddy Beau">
+		<div class="border-0 bg-white shadow-sm">
+  			<img src="https://images2.productserve.com/?w=400&h=400&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0148%2F2339%2F1280%2Fproducts%2F00_d9b0fc1e-35f5-4047-9291-38b6c884b2f7.jpg%3Fv%3D1612542792&feedId=38711&k=bf42a72d8f1463dd3a374760b9e6e95e56db974b" alt="Teddy's Collection Scandi Hopsack Beige Single Bed" class="w-100 mb-3">
+  			<div class="p-3">
+	  			<h4 class="fs-5 fw-bold" style="height:80px;overflow:hidden">Teddy's Collection Scandi Hopsack Beige Single Bed</h4>
+	  				  				<p class="fs-4">&pound;381.00</p>
+	  					  			
+	  			<p class="fs-6 fw-light">Sold by Teddy Beau</p>
+	  		</div>
+			</div>
+		</a>
+</div>
+<div class="col-md-4 mb-3">
+	<a href="teddy's-collection-scandi-hopsack-light-grey-king-size-bed-28480960683-product.html" class="text-decoration-none text-body" title="Shop Teddy's Collection Scandi Hopsack Light Grey King Size Bed from Teddy Beau">
+		<div class="border-0 bg-white shadow-sm">
+  			<img src="https://images2.productserve.com/?w=400&h=400&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0148%2F2339%2F1280%2Fproducts%2F00_39d00546-0548-4bce-ab9c-10d5510f39aa.jpg%3Fv%3D1612446223&feedId=38711&k=92fe0a70fb8ee081518010facd87fe7d0e148d6c" alt="Teddy's Collection Scandi Hopsack Light Grey King Size Bed" class="w-100 mb-3">
+  			<div class="p-3">
+	  			<h4 class="fs-5 fw-bold" style="height:80px;overflow:hidden">Teddy's Collection Scandi Hopsack Light Grey King Size Bed</h4>
+	  				  				<p class="fs-4">&pound;458.00</p>
+	  					  			
+	  			<p class="fs-6 fw-light">Sold by Teddy Beau</p>
+	  		</div>
+			</div>
+		</a>
+</div>
+		</div>
+
+		<div class="row d-none" id="sort-by-price-high-to-low">  
+			<div class="col-md-4 mb-3">
+	<a href="teddy's-collection-scandi-hopsack-light-grey-king-size-bed-28480960683-product.html" class="text-decoration-none text-body" title="Shop Teddy's Collection Scandi Hopsack Light Grey King Size Bed from Teddy Beau">
+		<div class="border-0 bg-white shadow-sm">
+  			<img src="https://images2.productserve.com/?w=400&h=400&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0148%2F2339%2F1280%2Fproducts%2F00_39d00546-0548-4bce-ab9c-10d5510f39aa.jpg%3Fv%3D1612446223&feedId=38711&k=92fe0a70fb8ee081518010facd87fe7d0e148d6c" alt="Teddy's Collection Scandi Hopsack Light Grey King Size Bed" class="w-100 mb-3">
+  			<div class="p-3">
+	  			<h4 class="fs-5 fw-bold" style="height:80px;overflow:hidden">Teddy's Collection Scandi Hopsack Light Grey King Size Bed</h4>
+	  				  				<p class="fs-4">&pound;458.00</p>
+	  					  			
+	  			<p class="fs-6 fw-light">Sold by Teddy Beau</p>
+	  		</div>
+			</div>
+		</a>
+</div>
+<div class="col-md-4 mb-3">
+	<a href="teddy's-collection-scandi-hopsack-beige-single-bed-28480960685-product.html" class="text-decoration-none text-body" title="Shop Teddy's Collection Scandi Hopsack Beige Single Bed from Teddy Beau">
+		<div class="border-0 bg-white shadow-sm">
+  			<img src="https://images2.productserve.com/?w=400&h=400&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0148%2F2339%2F1280%2Fproducts%2F00_d9b0fc1e-35f5-4047-9291-38b6c884b2f7.jpg%3Fv%3D1612542792&feedId=38711&k=bf42a72d8f1463dd3a374760b9e6e95e56db974b" alt="Teddy's Collection Scandi Hopsack Beige Single Bed" class="w-100 mb-3">
+  			<div class="p-3">
+	  			<h4 class="fs-5 fw-bold" style="height:80px;overflow:hidden">Teddy's Collection Scandi Hopsack Beige Single Bed</h4>
+	  				  				<p class="fs-4">&pound;381.00</p>
+	  					  			
+	  			<p class="fs-6 fw-light">Sold by Teddy Beau</p>
+	  		</div>
+			</div>
+		</a>
+</div>
+		</div>
+
+		<div class="row d-none" id="sort-by-newest-arrivals">  
+			<div class="col-md-4 mb-3">
+	<a href="teddy's-collection-scandi-hopsack-light-grey-king-size-bed-28480960683-product.html" class="text-decoration-none text-body" title="Shop Teddy's Collection Scandi Hopsack Light Grey King Size Bed from Teddy Beau">
+		<div class="border-0 bg-white shadow-sm">
+  			<img src="https://images2.productserve.com/?w=400&h=400&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0148%2F2339%2F1280%2Fproducts%2F00_39d00546-0548-4bce-ab9c-10d5510f39aa.jpg%3Fv%3D1612446223&feedId=38711&k=92fe0a70fb8ee081518010facd87fe7d0e148d6c" alt="Teddy's Collection Scandi Hopsack Light Grey King Size Bed" class="w-100 mb-3">
+  			<div class="p-3">
+	  			<h4 class="fs-5 fw-bold" style="height:80px;overflow:hidden">Teddy's Collection Scandi Hopsack Light Grey King Size Bed</h4>
+	  				  				<p class="fs-4">&pound;458.00</p>
+	  					  			
+	  			<p class="fs-6 fw-light">Sold by Teddy Beau</p>
+	  		</div>
+			</div>
+		</a>
+</div>
+<div class="col-md-4 mb-3">
+	<a href="teddy's-collection-scandi-hopsack-beige-single-bed-28480960685-product.html" class="text-decoration-none text-body" title="Shop Teddy's Collection Scandi Hopsack Beige Single Bed from Teddy Beau">
+		<div class="border-0 bg-white shadow-sm">
+  			<img src="https://images2.productserve.com/?w=400&h=400&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0148%2F2339%2F1280%2Fproducts%2F00_d9b0fc1e-35f5-4047-9291-38b6c884b2f7.jpg%3Fv%3D1612542792&feedId=38711&k=bf42a72d8f1463dd3a374760b9e6e95e56db974b" alt="Teddy's Collection Scandi Hopsack Beige Single Bed" class="w-100 mb-3">
+  			<div class="p-3">
+	  			<h4 class="fs-5 fw-bold" style="height:80px;overflow:hidden">Teddy's Collection Scandi Hopsack Beige Single Bed</h4>
+	  				  				<p class="fs-4">&pound;381.00</p>
+	  					  			
+	  			<p class="fs-6 fw-light">Sold by Teddy Beau</p>
+	  		</div>
+			</div>
+		</a>
+</div>
+		</div>
+
+
+	</div>
+</div>
+
+
 
   </main>
 	<footer class="bg-light">
