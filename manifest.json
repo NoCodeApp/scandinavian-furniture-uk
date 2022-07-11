@@ -13,6 +13,12 @@
       "src": "images/d964d82244eaa6bb4f24f2a0e520beea.png",
       "sizes": "512x512",
       "type": "image/png"
+    },
+    {
+      "src": "images/d964d82244eaa6bb4f24f2a0e520beea.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
     }
   ],
   "theme_color": "#ffffff",

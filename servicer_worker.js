@@ -1,8 +1,8 @@
-ar cacheName = 'hello-pwa';
+var cacheName = 'Scandinavian Furniture UK';
 var filesToCache = [
-  '/',
-  '/index.html',
-  '/index.js'
+  './',
+  './index.html',
+  './index.js'
 ];
 
 /* Start the service worker and cache all of the app's content */
